@@ -14,8 +14,6 @@ const refs = {
   seconds: document.querySelector('[data-seconds]'),
 };
 
-refs.startBtn.addEventListener('click', onStartBtn);
-
 let endDate = null;
 let timerId = null;
 let timerData = {};
@@ -80,4 +78,4 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 
-// refs.startBtn.addEventListener('click', onStartBtn);
+refs.startBtn.addEventListener('click', onStartBtn);
