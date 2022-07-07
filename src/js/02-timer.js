@@ -48,6 +48,7 @@ function onStartBtn() {
     }
     timerData = convertMs(diffDate);
     createTimerRefs(timerData);
+    refs.startBtn.disabled = true;
   }, 1000);
 }
 
